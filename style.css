@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); /* ROBOTO FONT */
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Noto+Naskh+Arabic:wght@400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"); /* Logo Font */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+.header {
+  background-color: #1f2937;
+  color: #f9faf8;
+}
+
+.header-container {
+  max-width: 800px;
+  /* max-width: 80%; */
+  margin: auto;
+  height: 450px;
+  padding: 24px 0;
+}
+
+.navbar {
+  color: #e5e7eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: "Agbalumo", system-ui;
+  font-size: 20px;
+  color: #f9faf8;
+}
+
+.nav-links ul {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links ul li a {
+  padding: 10px 16px;
+  transition: all 0.4s ease-in-out;
+  border-radius: 10px;
+}
+
+.nav-links ul li a:hover {
+  color: #1f2937;
+  background-color: #e5e7eb;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.header-content {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-content div {
+  flex: 1;
+}
+
+.header-text h1 {
+  font-weight: 900;
+  color: #f9faf8;
+  font-size: 44px;
+}
+
+.header-text p {
+  color: #e5e7eb;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.header-image {
+  /* without a height the background url wouldn't work  */
+  height: 230px;
+  border-radius: 10px;
+  background: url(./images/header.jpg);
+  background-color: #1f2937;
+  background-size: cover;
+  background-blend-mode: luminosity; /* overlay color for image */
+}
+
+button.sign-up {
+  background-color: #3882f6;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  color: #f9faf8;
+  font-weight: 900;
+  transition: all 0.4s ease-in-out;
+}
+
+button.sign-up:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
